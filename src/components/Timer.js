@@ -22,12 +22,9 @@ const Timer = () => {
   }, [isPlaying, remainingTime]);
 
   useEffect(() => {
-    // Convert remaining seconds to hours, minutes, and seconds
     const hours = Math.floor(remainingTime / 3600);
     const remainingMinutes = Math.floor((remainingTime % 3600) / 60);
     const seconds = remainingTime % 60;
-
-    // Format the result as HH:mm:ss
     const formattedHours = String(hours).padStart(2, '0');
     const formattedRemainingMinutes = String(remainingMinutes).padStart(2, '0');
     const formattedSeconds = String(seconds).padStart(2, '0');
