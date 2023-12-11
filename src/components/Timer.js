@@ -35,7 +35,7 @@ const Timer = () => {
 
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
-    setRemainingTime(Math.max(0, inputValue * 60)); // Convert minutes to seconds
+    setRemainingTime(Math.max(0, inputValue * 60));
     setInitialMinutes(Math.max(0, inputValue));
   };
 
