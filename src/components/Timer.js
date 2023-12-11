@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaCirclePlay } from 'react-icons/fa6';
+import { FaPlayCircle } from "react-icons/fa";
 import { FaPauseCircle } from "react-icons/fa";
 import { FaUndo } from "react-icons/fa";
 
@@ -67,7 +67,7 @@ const Timer = () => {
       {isPlaying ? (
         <FaPauseCircle className='play-icon' onClick={handlePauseClick} />
         ) : (
-        <FaCirclePlay className='play-icon' fill='#04aacd' onClick={handlePlayClick} />
+        <FaPlayCircle className='play-icon' fill='#04aacd' onClick={handlePlayClick} />
         )}
         <span className='timer-text'>{formattedTime}</span>
       </div>
